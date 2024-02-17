@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Overview{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <p>Welcome to the message bank!</p>
+
+  <p>Please click this link to submit a message: <a href="{{ url_for('ask') }}">Submission Link</a>  </p>
+
+  <p>Please click this link to view a message: <a href="{{ url_for('view') }}">View Link</a>  </p>
+
+ 
+
+{% endblock %}
